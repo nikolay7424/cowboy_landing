@@ -215,7 +215,7 @@ h3 {
 
 .carousel::-webkit-scrollbar {
   width: 100%;
-  height: 2rem;
+  height: 1rem;
 }
 
 .carousel::-webkit-scrollbar-thumb {
@@ -237,13 +237,33 @@ h3 {
   margin-top: 10rem;
 }
 
+#section-4 img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 #section-4 article {
   display: flex;
   gap: 3rem;
 }
 
+#section-4 .img-group-wrapper {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
 #section-4 .img-group {
+  width: 100%;
   position: relative;
+}
+
+#section-4 .img-group-active {
+  display: block;
 }
 
 #section-4 .info-wrapper {
@@ -275,3 +295,99 @@ h3 {
   display: flex;
   gap: 3rem;
 }
+
+#section-4 .radio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#section-4 .radio {
+  width: 15rem;
+  height: 1rem;
+  background: var(--gray);
+  border-radius: var(--border-radius);
+  opacity: 0.7;
+}
+
+#section-4 .radio-active {
+  background: var(--black);
+}
+
+#section-5 {
+  margin-top: 10rem;
+}
+
+#section-5 .review {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 6rem;
+}
+
+#section-5 blockquote {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+
+#section-5 .active-quote {
+  display: block;
+}
+
+#section-5 blockquote p {
+  line-height: 120%;
+  font-weight: 400;
+  margin: 0;
+  display: none;
+}
+
+#section-5 blockquote img {
+  margin-right: 4rem;
+}
+
+#section-5 .user-carousel {
+  margin-left: 10.8rem;
+  margin-top: 3rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, min-content);
+  align-items: center;
+}
+
+#section-5 .user p , #section-5 .user span {
+  display: none;
+}
+
+#section-5 .user-active {
+  padding: 1rem 6rem 1rem 1rem;
+  background: var(--black);
+  border-radius: 10rem;
+  color: var(--white);
+  display: flex;
+  width: 35rem;
+  align-items: center;
+}
+
+#section-5 .user-active img {
+  margin-right: 2rem;
+}
+
+#section-5 .user-active p {
+  display: block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#section-5 .user-active span {
+  display: inline;
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+#section-6 {
+  
+}
+
