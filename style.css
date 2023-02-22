@@ -20,6 +20,42 @@ body {
   padding: 0 3.2rem;
 }
 
+.btn {
+  width: 8em;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  padding: 0.6em 1.4em;
+  cursor: pointer;
+  border: none;
+}
+
+h2 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#section-2, 
+#section-3, 
+#section-4, 
+#section-5, 
+#section-6,
+#section-7 {
+  margin: 0 7.8rem;
+}
+
 header {
   padding: 3.2rem 0;
   display: flex;
@@ -67,17 +103,6 @@ nav > ul li {
   text-align: end;
 }
 
-.btn {
-  width: 8em;
-  background: var(--black);
-  color: var(--white);
-  border-radius: 10rem;
-  font-size: 1.4rem;
-  padding: 0.6em 1.4em;
-  cursor: pointer;
-  border: none;
-}
-
 .svg {
   opacity: 0.5;
   cursor: pointer;
@@ -87,6 +112,8 @@ nav > ul li {
 .svg:hover {
   opacity: 1;
 }
+
+/* Section 1 */
 
 #section-1 {
   width: 100%;
@@ -112,14 +139,6 @@ nav > ul li {
   font-size: 10rem;
   font-weight: 400;
   line-height: 100%;
-}
-
-#section-2, 
-#section-3, 
-#section-4, 
-#section-5, 
-#section-6 {
-  margin: 0 7.8rem;
 }
 
 .hero-image {
@@ -148,31 +167,13 @@ nav > ul li {
   filter: blur(-1.2rem);
 }
 
+/* Section 2 */
+
 #section-2 {
   position: relative;
   background: var(--white);
   z-index: 2;
   height: 80rem;
-}
-
-h2 {
-  font-size: 6rem;
-  margin: 0;
-}
-
-h3 {
-  font-size: 2.4rem;
-  margin: 0;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.wide-image {
-  width: 100%;
 }
 
 #section-2 .description {
@@ -208,9 +209,10 @@ h4 {
   left: 30rem;
 }
 
+/* Section 3 */
+
 #section-3 {
   margin-top: 30rem;
-
 }
 
 .carousel {
@@ -239,12 +241,17 @@ h4 {
   margin-right: 3rem;
 }
 
+/* Section 4 */
+
 #section-4 {
   margin-top: 10rem;
 }
 
+.wide-image {
+  width: 100%;
+}
+
 #section-4 img {
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -321,6 +328,8 @@ h4 {
   background: var(--black);
 }
 
+/* Section 5 */
+
 #section-5 {
   margin-top: 10rem;
 }
@@ -393,6 +402,8 @@ h4 {
   margin: 0;
 }
 
+/* Section 6 */
+
 #section-6 {
   margin-top: 10rem;
 }
@@ -429,10 +440,6 @@ h4 {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
-
-/* .accordion-item-header.accordion-active + .accordion-item-body {
-  max-height: auto;
-} */
 
 .accordion-item-body-content {
   padding: 0 3.5rem 2.5rem 3.5rem;
