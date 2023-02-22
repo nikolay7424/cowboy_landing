@@ -165,6 +165,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
 .wide-image {
   width: 100%;
 }
@@ -388,6 +394,46 @@ h3 {
 }
 
 #section-6 {
-  
+  margin-top: 10rem;
 }
 
+#section-6 h2 {
+  margin-bottom: 7rem;
+}
+
+.accordion-item {
+  background: var(--black);
+  color: var(--white);
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+}
+
+.accordion-item-header {
+  cursor: pointer;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item-header img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotateZ(180deg);
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* .accordion-item-header.accordion-active + .accordion-item-body {
+  max-height: auto;
+} */
+
+.accordion-item-body-content {
+  padding: 0 3.5rem 2.5rem 3.5rem;
+}
