@@ -3,8 +3,10 @@
   font-family: 'Poppins';
 
   --gray: rgb(165, 165, 165);
+  --dark-gray: rgb(56, 56, 56);
   --black: rgb(21, 21, 21);
   --white: #fff;
+  --khaki: rgb(236, 216, 165);
   --border-radius: 2.4rem;
 }
 
@@ -32,6 +34,7 @@ body {
 }
 
 h2 {
+  font-weight: 400;
   font-size: 6rem;
   margin: 0;
 }
@@ -431,6 +434,12 @@ nav > ul li {
   transition: transform 0.3s ease-in-out;
 }
 
+.accordion-item-header span {
+  background: var(--dark-gray);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 .rotate {
   transform: rotateZ(180deg);
 }
@@ -443,4 +452,120 @@ nav > ul li {
 
 .accordion-item-body-content {
   padding: 0 3.5rem 2.5rem 3.5rem;
+}
+
+.accordion-item-body-content ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-item-body-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid var(--gray);
+}
+
+.accordion-item-body-content p {
+  margin: 1.5rem 0;
+}
+
+/* Section 7 */
+
+#section-7 {
+  background: var(--black);
+  border-radius: var(--border-radius);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+#section-7 p {
+  margin: 3.3rem 0 0.8rem 0;
+}
+
+#section-7 h2 {
+  margin: 0 0 4.5rem 0;
+  line-height: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.btn-i {
+  background: var(--white);
+  color: var(--black);
+  height: 4.4rem;
+}
+
+.slider-buttons {
+  background: var(--dark-gray);
+  border-radius: 10rem;
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 4.5rem;
+  flex: 1;
+}
+
+.btn-circle {
+  border: none;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+#circle-1 {
+  background: var(--gray);
+  color: var(--gray);
+}
+
+#circle-2 {
+  background: var(--khaki);
+  color: var(--khaki);
+}
+
+#circle-3 {
+  background: var(--white);
+  color: var(--white);
+}
+
+.btn-circle-active::after {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  position: relative;
+  top: -0.5rem;
+  left: -1rem;
+  border: 0.2rem solid currentColor;
+}
+
+#section-7 img {
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+footer p {
+  color: var(--black);
+}
+
+footer a {
+  color: var(--black);
+  text-decoration: none;
 }
