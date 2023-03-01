@@ -344,24 +344,48 @@ nav > ul li {
 }
 
 #section-5 blockquote {
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
+  margin: 0 0 8rem 0;
+  position: relative;
 }
 
 #section-5 .active-quote {
-  display: block;
+  opacity: 1;
 }
 
 #section-5 blockquote p {
+  transition: opacity 0.5s ease-in-out;
   line-height: 120%;
   font-weight: 400;
+  position: absolute;
+  top: -1rem;
+  left: 10.8rem;
   margin: 0;
-  display: none;
+  opacity: 0;
+}
+
+.user {
+  width: 8rem;
+  position: relative;
 }
 
 #section-5 blockquote img {
   margin-right: 4rem;
+}
+
+.user-image {
+  cursor: pointer;
+}
+
+.user-text {
+  position: absolute;
+  left: -10%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.user-active .user-text {
+  left: 35%;
+  opacity: 1;
 }
 
 #section-5 .user-carousel {
@@ -383,8 +407,10 @@ nav > ul li {
   border-radius: 10rem;
   color: var(--white);
   display: flex;
-  width: 35rem;
+  width: 30rem;
   align-items: center;
+  margin-top: -1rem;
+  transition: width 0.3s ease-in-out;
 }
 
 #section-5 .user-active img {
@@ -523,8 +549,8 @@ nav > ul li {
 }
 
 #circle-1 {
-  background: var(--gray);
-  color: var(--gray);
+  background: var(--black);
+  color: var(--black);
 }
 
 #circle-2 {
@@ -533,8 +559,8 @@ nav > ul li {
 }
 
 #circle-3 {
-  background: var(--white);
-  color: var(--white);
+  background: rgb(85, 112, 92);
+  color: rgb(85, 112, 92);
 }
 
 .btn-circle-active::after {
@@ -549,9 +575,44 @@ nav > ul li {
   border: 0.2rem solid currentColor;
 }
 
-#section-7 img {
-  margin-bottom: 1rem;
+.carousel-wrapper {
+  position: relative;
+  height: 35vw;
+  width: 80%;
+  margin: 0 auto;
 }
+
+.carousel-image {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+.carousel-track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 0.3s ease-in;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* Footer */
 
 footer {
   display: flex;
